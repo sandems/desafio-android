@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor01: #8AF7BD;
+    --cor02: #3FF593;
+    --cor03: #32C275;
+    --cor04: #42755A;
+    --cor05: #1E7547;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Stick No Bills', sans-serif;
+    --font-android: 'Android', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor01);
+    font-family: var(--font-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor02));
+    min-height: 150px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+}
+
+header > h1{
+    font-family: var(--font-destaque);
+    font-size: 4em;
+    font-weight: normal;
+    padding-top: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.500);
+}
+
+header > p{
+    font-family: var(--font-padrao);
+    font-size: 1.3em;
+    font-weight: normal;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.500);
+}
+
+nav{
+    background-color: var(--cor04);
+    padding: 7px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+}
+
+nav > a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0px 40px;
+}
+
+nav >a:hover{
+    background-color: var(--cor02);
+    color: var(--cor05);
+    text-decoration: underline;
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    max-width: 700px;
+    min-width: 280px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+
+}
+
+article{
+    line-height: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+article > h1{
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    color: white;
+    font-family: var(--font-android);
+    padding: 5px;
+    font-weight: normal;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+}
+
+article > h2{
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    font-size: 1.4em;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: var(--font-android);
+    padding: 5px;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+
+}
+
+article > p{
+    text-indent: 2em;
+    text-align: justify;
+    padding: 10px;
+}
+
+article > p > strong{
+    color: var(--cor05);
+}
+
+article > p > a{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+}
+
+div{
+    background-color: var(--cor05);
+    margin: 10px 0px 10px 0px;
+    padding: 50px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div > iframe{ 
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+aside{
+    background-color: var(--cor04);
+    line-height: 2em;
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+}
+
+aside > h3{
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: var(--font-android);
+    padding: 5px;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+}
+
+aside > p{
+    color: white;
+    text-align: justify;
+    text-indent: 2em;
+    padding: 10px;
+}
+
+aside > ul{
+    color: white;
+    list-style-position: inside;
+    columns: 2;
+    padding: 20px 0px;
+    list-style-type: '\00a0\00a0\2714\00a0\00a0';
+}
+
+aside > p > strong{
+    color: var(--cor01);
+}
+
+aside > p > a{
+    background-color: var(--cor01);
+    color: var(--cor05);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: var(--cor05);
+    padding: 5px;
+}
